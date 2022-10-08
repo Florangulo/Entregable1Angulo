@@ -1,0 +1,15 @@
+{% extends "AppCoder/plantilla.html" %}
+
+{% block titulo %}
+Resultado de Busqueda
+{% endblock %}
+
+{% block formular %}
+    {% for peli in pelis %}
+        <ul>
+            <li>Titulo: {{peli.titulo}}</li>
+            <li>Genero: {{peli.genero}}</li>
+            <li>Año: {{peli.anio}}</li>
+        </ul>
+    {% endfor %}
+{% endblock %}
